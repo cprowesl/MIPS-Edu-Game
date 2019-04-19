@@ -97,6 +97,7 @@ class CodePanel extends Component {
         var input_y=GAME_CANVAS.offsetTop;
         var input = document.createElement('input');
         input.type = 'text';
+        input.id = 'input_field';
         input.style.position = 'fixed';
         input.style.left = (input_x+this.x - 40) + 'px';
         input.style.top = (input_y+this.y+this.height - 20) + 'px';

@@ -32,5 +32,10 @@ class InstructionMenu extends GameScene{
         addInstruction.addLongPressEvent(AddHint);
         addInstruction.addClickEvent(AddHint);
         this.addComponent(addInstruction,-1);
+        var input_field = document.getElementById("input_field");
+        if(input_field != null){
+			input_field.parentNode.removeChild(input_field);
+			console.log("removed element");
+        }
     }
 }
